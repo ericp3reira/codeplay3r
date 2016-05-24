@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <title>CodePlay3r - Experiment Your JS Code </title>
+    
+    <!-- FOR PRODUCTION  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> -->
+    <!-- FOR DEVELOPMENT -->
+    <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+    
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="codeplayer.css">
+      
+  </head>
+  
+  <body>
+    
+    <div id="topbar">
+      <div id="logo">CodePlay3r</div>
+      <div id="tabs-menu">
+        <input type="checkbox" id="html"><label for="html">HTML</label>
+        <input type="checkbox" id="css"><label for="css">CSS</label>
+        <input type="checkbox" id="js"><label for="js">JS</label>
+        <input type="checkbox" id="output"><label for="output">OUTPUT</label>
+      </div>
+    </div>
+    
+    <div id="site-container">
+      <textarea id="html-area" class="area"><p>Hello!</p></textarea>
+      <textarea id="css-area" class="area hidden">p { background-color: green; }</textarea>
+      <textarea id="js-area" class="area hidden">JavaScript is disabled for now</textarea>
+      <iframe id="output-area" class="area"></iframe>
+    </div>
+    
+      
+    <script type="text/javascript" src="codeplayer.js"></script>
+    
+  </body>
+  
+</html>
